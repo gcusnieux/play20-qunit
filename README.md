@@ -7,13 +7,16 @@ How to use ?
 ------------
 
 * clone the repo
-* execute 'play dist' in project-code folder
+* execute 'play dist' in project-code
 * add the dependency in your project
 
+Build.scala :
+
 	val appDependencies = Seq(
-	// Add your project dependencies here,
-        "play20-qunit" % "play20-qunit_2.9.1" % "1.0"
+		// Add your project dependencies here,
+	        "play20-qunit" % "play20-qunit_2.9.1" % "1.0"
     	)
+
 * create the controller
 
 Qunit.java :
@@ -26,7 +29,7 @@ Qunit.java :
 
 	}
 
-routes
+routes :
 
 	GET     /qunit/:filename            controllers.Qunit.test(filename: String)
 
@@ -34,14 +37,14 @@ routes
 * add tests in folder
 
 
-domtest.html 
+domtest.html :
 
 	<div id="injected"></div>
 
 	<script src="/assets/javascripts/bigup.js" type="text/javascript"></script>
 	<script src="/assets/javascripts/jquery_tagName.min.js" type="text/javascript"></script>
 
-domtest.js
+domtest.js :
 
 	$(document).ready(function() {
 
