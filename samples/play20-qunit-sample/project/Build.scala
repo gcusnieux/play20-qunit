@@ -9,7 +9,7 @@ object ApplicationBuild extends Build {
 
     val appDependencies = Seq(
       // Add your project dependencies here,
-        "play20-qunit" % "play20-qunit_2.9.1" % "1.0"
+        "play20-qunit" % "play20-qunit_2.9.1" % "1.1-SNAPSHOT"
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
