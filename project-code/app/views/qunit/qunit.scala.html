@@ -1,0 +1,27 @@
+@(title: String, html: String, js: String)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="/assets/stylesheets/qunit.css">
+        <script src="/assets/javascripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+	 	<script src="/assets/javascripts/qunit.js" type="text/javascript"></script>
+    </head>
+    <body>
+     <h1 id="qunit-header">QUnit</h1>
+ 	 <h2 id="qunit-banner"></h2>
+ 	 <div id="qunit-testrunner-toolbar"></div>
+ 	 <h2 id="qunit-userAgent"></h2>
+ 	 <ol id="qunit-tests"></ol>
+ 		<div id="qunit-fixture">test markup, will be hidden</div>
+
+ 		@Html(html)
+
+ 		<script type="text/javascript">
+ 			@Html(js)
+ 		</script>
+
+    </body>
+</html>
